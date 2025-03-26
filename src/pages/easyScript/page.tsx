@@ -7,9 +7,9 @@ import EconomyFeatureSection from '@/widgets/economy-feature-section/ui/EconomyF
 import ArgumentActions from '@/widgets/argument-actions-section/ui/ArgumentActions'
 import AnalystFeatureSection from '@/widgets/analyst-feature-section/ui/AnalystFeatureSection'
 import FeedbackSection from '@/widgets/feedback-section/ui'
-import SentenseFeatureSection from '@/widgets/sentense-feature-section/ui/SentenseFeatureSection'
-import ScrollUp from '@/shared/ui/ScrollUp/ScrollUp'
 import FooterMain from '@/widgets/footerMain'
+import SentenseFeatureSection from '@/widgets/sentense-feature-section'
+import ScrollUp from '@/shared/ui/ScrollUp/ScrollUp'
 
 import styles from './EasyScript.module.scss'
 

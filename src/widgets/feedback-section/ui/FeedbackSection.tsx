@@ -53,7 +53,7 @@ const reviews: ReviewProps[] = [
       'Количество “игноров” в переписке сократилось на треть',
       'Клиенты стали чаще принимать решения сразу'
     ],
-    videoSrc: '/public/IMG_1413.webm',
+    videoSrc: '/IMG_1413.webm',
     imageSrc: '/ny.png'
   }
 ]

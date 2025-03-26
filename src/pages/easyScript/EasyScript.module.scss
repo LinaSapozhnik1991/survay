@@ -1,13 +1,15 @@
 .scripts{
     display: flex;
-    gap:168px;
+    flex-direction: column;
+ 
 .easy{
     
     display: flex;
-
     flex-direction: column;
     gap:160px;
     padding:168px 120px 20px 120px;
-    .CaretUp{margin-left: auto;}
+    .CaretUp{
+        margin-left: auto;
+    cursor:pointer;}
 }
 }

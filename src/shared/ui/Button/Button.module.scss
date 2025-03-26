@@ -1,6 +1,9 @@
 .button {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   transition: 0.3s;
   border-radius: $RadiusXXL;
   -webkit-border-radius: $RadiusXXL;
@@ -21,7 +24,7 @@
 
   &.default {
     color: $textGeneral;
-    background-color: transparent;
+    background-color: $white;
     border: 1px solid $borderInput;
   }
 
@@ -52,5 +55,22 @@
     width: 570px;
     height: 48px;
     font: $fontBody;
+  }
+  &.mediumXL {
+    font: $fontP1;
+    width: 308px;
+    height: 64px;
+  }
+  &.mediumXXL {
+    font: $fontH3;
+    font-weight: 400;
+    width: 392px;
+    height: 72px;
+  }
+  &.smallXL {
+    font: $fontH3;
+    font-weight: 400;
+    width: 297px;
+    height: 72px;
   }
 }
