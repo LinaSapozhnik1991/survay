@@ -83,7 +83,8 @@ const VideoPlayer: React.FC<{
   imageSrc: string
   isPlaying: boolean
   onPlay: () => void
-}> = ({ videoSrc, imageSrc, isPlaying, onPlay }) => {
+  onPause: () => void
+}> = ({ videoSrc, imageSrc, isPlaying, onPlay, onPause }) => {
   return (
     <div
       className={styles.videoContainer}
@@ -103,7 +104,7 @@ const VideoPlayer: React.FC<{
           </button>
         </div>
       ) : (
-        <video width="830" height="506" controls autoPlay>
+        <video width="830" height="506" controls autoPlay onPause={onPause}>
           <source src={videoSrc} type="video/webm" />
           Ваш браузер не поддерживает видео.
         </video>
@@ -158,6 +159,7 @@ const FeedbackSection: React.FC = () => {
                   imageSrc={review.imageSrc}
                   isPlaying={playingIndex === index}
                   onPlay={() => setPlayingIndex(index)}
+                  onPause={() => setPlayingIndex(null)}
                 />
               </div>
             </div>
