@@ -1,9 +1,11 @@
+/* eslint-disable import/named */
 'use client'
 import React, { FC, useState } from 'react'
 import {
   FieldError,
   SubmitHandler,
   useForm,
+  // eslint-disable-next-line import/named
   UseFormRegister
 } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -99,6 +101,7 @@ const RegisterForm: FC = () => {
     mode: 'onChange'
   })
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit: SubmitHandler<FormData> = data => {}
 
   const [showPassword, setShowPassword] = useState(false)

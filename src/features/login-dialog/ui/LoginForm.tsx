@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 'use client'
 import React, { FC, useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
@@ -32,6 +33,7 @@ const LoginForm: FC = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [registrationSuccess, setRegistrationSuccess] = useState(false)
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit: SubmitHandler<FormData> = data => {
     setRegistrationSuccess(true)
   }
