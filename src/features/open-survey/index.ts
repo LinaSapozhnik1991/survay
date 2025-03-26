@@ -1,2 +1,2 @@
-import OpenSurvey from "./ui/OpenSurvey";
+import OpenSurvey from './ui/OpenSurvey'
 export default OpenSurvey

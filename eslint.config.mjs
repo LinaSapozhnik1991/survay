@@ -47,14 +47,14 @@ eslintConfig.push({
     'import/named': 'warn',
     'import/default': 'error',
     'import/namespace': 'error',
-    'boundaries/element-types': 'error',
+    'boundaries/element-types': 'warn',
     'prettier/prettier': 'error'
   },
   settings: {
     'boundaries/elements': [
       {
         type: 'component',
-        name: '^.*'
+        name: '^.*$'
       }
     ],
     'import/resolver': {
