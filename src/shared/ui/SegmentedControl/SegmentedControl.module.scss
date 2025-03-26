@@ -1,0 +1,65 @@
+.segmentedControlWrapper {
+  position      : relative;
+  display       : flex;
+  flex-direction: column;
+
+
+
+
+  .label {
+    font : $fontMain;
+    margin-bottom: 8px;
+  }
+
+  .segmentedControl {
+    @include flex-container(row, center, center);
+    overflow     : hidden;
+  }
+
+  .segmentOption {
+    text-align: center;
+    font: $fontP1;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: $RadiusXL ;
+    transition: background-color 0.3s ease;
+    position: relative;
+    -webkit-border-radius: $RadiusXL ;
+    -moz-border-radius: $RadiusXL ;
+    -ms-border-radius: $RadiusXL ;
+    -o-border-radius: $RadiusXL ;
+  }
+
+  .active {
+    font-weight: bold;
+    background-color: $bgInputHover;
+    transition:   background-color 0.3s ease;
+    -webkit-transition:   background-color 0.3s ease;
+    -moz-transition:   background-color 0.3s ease;
+    -ms-transition:   background-color 0.3s ease;
+    -o-transition:   background-color 0.3s ease;
+}
+
+  .disabled {
+    opacity       : 0.5;
+    pointer-events: none;
+  }
+
+  .underline {
+    position        : absolute;
+    text-align      : center;
+    width           : auto;
+    bottom          : -1px;
+    height          : 2px;
+    background-color: $bgPrimary;
+    transition      :
+      left 0.3s ease,
+      width 0.3s ease;
+    border-radius        : $RadiusSm;
+    -webkit-border-radius: $RadiusSm;
+    -moz-border-radius   : $RadiusSm;
+    -ms-border-radius    : $RadiusSm;
+    -o-border-radius     : $RadiusSm;
+  }
+ 
+}

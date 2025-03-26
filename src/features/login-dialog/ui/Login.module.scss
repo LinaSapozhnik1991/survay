@@ -1,0 +1,98 @@
+.login {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+
+  border-radius        : $RadiusL;
+  -webkit-border-radius: $RadiusL;
+  -moz-border-radius   : $RadiusL;
+  -ms-border-radius    : $RadiusL;
+  -o-border-radius     : $RadiusL;
+
+  .alarm {
+    font      : $fontMain;
+    text-align: left;
+
+    color: $textPrimary;
+  }
+
+  .modalForm {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : $spacingGeneral;
+    gap           : $spacingGeneral;
+
+    .containerInput {
+      display       : flex;
+      position      : relative;
+      flex-direction: column;
+      text-align    : left;
+      align-items   : flex-start;
+      gap           : $spacingTitle;
+      margin-bottom : $spacingBetweenButton;
+      height        : 84px;
+
+      .inputWrapper {
+        display    : flex;
+        align-items: center;
+
+        .error {
+          display     : flex;
+          border-color: $borderError;
+          color       : $textError;
+          margin-left : 12px;
+          font        : $fontSmall;
+        }
+
+        &:active {
+          height : 84px;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.checkIcon {
+  margin-left: 16px;
+}
+
+.eyeIcon {
+  position          : absolute;
+  right             : 190px;
+  top               : 50%;
+  cursor            : pointer;
+  transition        : color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition   : color 0.3s;
+  -ms-transition    : color 0.3s;
+  -o-transition     : color 0.3s;
+}
+
+.passwopd {
+  color: $textPassword;
+}
+
+.form_bottom {
+  display       : flex;
+  flex-direction: column;
+  gap           : $spacingBetweenButton;
+
+  .linkWrapper {
+    display    : flex;
+    align-items: center;
+
+    a {
+      font : $fontMain;
+      color: $textLabelCheck;
+    }
+
+    &.error {
+      border: 2px solid $borderError;
+    }
+  }
+
+  .btn {
+    margin-top: $spacingBetweenButton;
+  }
+}

@@ -1,0 +1,77 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  transition:
+  background-color 0.3s,
+  border-color 0.3s;
+  cursor: pointer;
+  #label {
+    font-size: $fontMain;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkedIcon {
+  @include flex-container (row,center,center);
+  width: 40px;
+  height: 40px;
+  border: 1px solid $borderInput;
+  border-radius: $RadiusSm;
+  -webkit-border-radius: $RadiusSm;
+  -moz-border-radius: $RadiusSm;
+  -ms-border-radius: $RadiusSm;
+  -o-border-radius: $RadiusSm;
+  margin-right: 0.5rem;
+  transition:
+  background-color 0.3s, border-color 0.3s, opacity 0.3s;
+
+
+  &.checked
+{
+    border-color: $borderInput;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+  &:hover {
+    border-color: $borderInput;
+    background-color: $bgInputHover;
+  }
+}
+
+.error .checkedIcon {
+  border-color: $borderError;
+}
+
+.large {
+  .checkedIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.medium {
+  .checkedIcon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.small {
+  .checkedIcon {
+    width: 25px;
+    height:25px;
+  }
+}
+
+.xsmall {
+  .checkedIcon {
+    width: 20px;
+    height: 20px;
+  }
+}

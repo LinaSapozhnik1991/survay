@@ -1,0 +1,56 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: $RadiusXXL;
+  -webkit-border-radius: $RadiusXXL;
+  -moz-border-radius: $RadiusXXL;
+  -ms-border-radius: $RadiusXXL;
+  -o-border-radius: $RadiusXXL;
+  &.primary {
+    color: $textActiveButton;
+    background-color: $bgPrimary;
+    border: 1px solid $borderPrimary;
+
+    &:hover {
+      background-color: $bgPrimaryHover;
+      border: 1px solid $borderPrimary;
+      color: $textActiveButton;
+    }
+  }
+
+  &.default {
+    color: $textGeneral;
+    background-color: transparent;
+    border: 1px solid $borderInput;
+  }
+
+  &.disabled {
+    background-color: $bgDisabled;
+    border: 1px solid $borderDisabled;
+    color: $textDisabled;
+    cursor: no-drop;
+
+    &:hover {
+      background-color: $bgDisabled;
+      border: 1px solid $borderDisabled;
+      color: $textDisabled;
+    }
+  }
+
+  &.small {
+    font: $fontMain;
+    padding: 12px;
+  }
+
+  &.medium {
+    font: $fontBody;
+    padding: 12px;
+  }
+
+  &.large {
+    width: 570px;
+    height: 48px;
+    font: $fontBody;
+  }
+}

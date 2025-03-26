@@ -1,0 +1,86 @@
+.inputContainer {
+  position: relative;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+   
+
+  .label {
+    display: block;
+    font-size: $fontMain;
+  }
+}
+.input {
+  font: $fontMain;
+  font-weight: 400;
+  padding-left: 30px;
+  border: 1px solid $borderInput;
+  color: $textGeneralInput;
+  max-width: 540px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: $RadiusM;
+  -webkit-border-radius: $RadiusM;
+  -moz-border-radius: $RadiusM;
+  -ms-border-radius: $RadiusM;
+  -o-border-radius: $RadiusM;
+
+  &.rounded {
+    border-radius: $RadiusXL;
+    -webkit-border-radius: $RadiusXL;
+    -moz-border-radius: $RadiusXL;
+    -ms-border-radius: $RadiusXL;
+    -o-border-radius: $RadiusXL;
+  }
+  &.inputCompleted {
+    border-color: $borderInputCompleted;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    color: $textPlaceholder;
+    cursor: not-allowed;
+  }
+
+  &:active {
+    border-color: $borderInputActive;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $bgInputHover;
+    border: 1px solid $borderInput;
+    color: $textPlaceholder;
+    transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  }
+
+  &.default {
+    border-color: $borderInput;
+  }
+
+  &.small {
+    height: 44px;
+    width: 320px;
+  }
+
+  &.medium {
+    height: 48px;
+    width: 480px;
+  }
+  &.large {
+    height: 52px;
+    width: 540px;
+  }
+}
+.error {
+  border-color: $borderError;
+}
+.errorMessage {
+  color: $textError;
+  font: $fontSmall;
+}
