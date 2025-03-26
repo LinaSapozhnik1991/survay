@@ -27,7 +27,7 @@ eslintConfig.push({
   },
   rules: {
     'no-console': 'error',
-    'no-unused-vars': 'error',
+    'no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'import/order': [
       'warn',
