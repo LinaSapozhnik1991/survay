@@ -1,0 +1,61 @@
+.argumentActions {
+  color: $textGeneralInput;
+  .cardTitle {
+    font: $fontH2;
+  }
+  p {
+    font: $fontP1;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 40px 60px 40px;
+    max-width: 830px;
+    min-height: 873px;
+    background:
+      linear-gradient(180deg, rgba(249, 249, 249, 0) 83.79%, #f9f9f9 95.65%),
+      linear-gradient(356.28deg, rgba(249, 249, 249, 0) 53.32%, #f9f9f9 67.53%),
+      url('../assets/avto.svg') no-repeat bottom;
+    border-radius: $RadiusXXL;
+    -webkit-border-radius: $RadiusXXL;
+    -moz-border-radius: $RadiusXXL;
+    -ms-border-radius: $RadiusXXL;
+    -o-border-radius: $RadiusXXL;
+
+    .cardTitle {
+      font: $fontH2;
+      font-weight: 400;
+    }
+
+    .cardSubtitle {
+      font: $fontP1;
+      margin-top: $spacingFreeSmall;
+      width: 589px;
+    }
+
+    .description {
+      font: $fontBody;
+      width: 527px;
+      height: 96px;
+    }
+  }
+
+  .cardEnd {
+    font: $fontH3;
+  }
+
+  .cardAlt {
+    background: url('../assets/abstract.svg') no-repeat;
+
+    .description {
+      height: 96px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.main{@include flex-container(column, flex-start);
+    justify-content: space-between;
+    color: $textCardArguments;
+    padding:40px 120px 120px 120px;
+    height: 1026px;
+    border-bottom-right-radius: $RadiusXXL;
+    border-bottom-left-radius: $RadiusXXL;
+    background: url('../assets/FeatureMainArrowSvg.svg')no-repeat bottom,
+    linear-gradient(0deg, rgba(243, 243, 243, 0.5) 0%, #F3F3F3 14.04%);
+
+.mainHead{
+
+    background: url('../assets/quote.svg')no-repeat center;
+    background-position: left 1042px top 129px;
+    .mainText{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 140px;
+        .mainText_name{
+            font:$fontH1;
+           
+         
+            .easyScript{
+                font-weight: 400;
+                margin-bottom:36px;
+            }
+            .dopText{
+                line-height: 64px;
+                width: 751px;
+                font-weight: 500;
+            }
+        }
+    
+    .quoteContainer{
+        .quote{
+        font: $fontH3;
+        line-height: 40px;
+        margin-bottom: 24px;
+        width: 618px;
+        text-align: left;
+     
+    }
+        .autor{
+            @include flex-container(row, flex-end, center);
+          
+            font:$fontBody ;
+             }
+    }
+  
+}
+}
+   .btn{
+    margin-left: auto;
+
+   }
+}

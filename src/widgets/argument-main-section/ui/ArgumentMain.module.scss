@@ -1,0 +1,62 @@
+.argumentsSection {
+  color: $textCardArguments;
+  h2 {
+    font: $fontH2;
+    margin-bottom: 60px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    width: 830px;
+    height: 873px;
+    background: url('../assets/graf.svg') no-repeat;
+    background-position: center calc(100% - 140px);
+    border: 1px solid  $bgLinePage;
+    border-radius: $RadiusXXL;
+    -webkit-border-radius: $RadiusXXL;
+    -moz-border-radius: $RadiusXXL;
+    -ms-border-radius: $RadiusXXL;
+    -o-border-radius: $RadiusXXL;
+    .cardTitle {
+      font: $fontH2;
+      font-weight: 400;
+    }
+    .cardSubtitle {
+      font: $fontP1;
+      margin-top: $spacingFreeSmall;
+      width: 589px;
+    }
+    .description {
+      margin-top: $spacingFreeSmall;
+      font: $fontBody;
+      width: 409px;
+      height: 120px;
+    }
+  
+  .cardEnd {
+    font: $fontH3;
+    margin-bottom: 60px;
+  }}
+  .cardAlt {
+    background:
+      linear-gradient(356.28deg, rgba(249, 249, 249, 0) 53.32%, #f9f9f9 67.53%),
+      linear-gradient(180deg, rgba(249, 249, 249, 0) 65.64%, #f9f9f9 92.96%),
+      url('../assets/mountain.svg') no-repeat bottom;
+    background-size: auto;
+
+    .description {
+      text-align: left;
+      width: 527px;
+      height: 96px;
+    }
+  }
+
+}
+}

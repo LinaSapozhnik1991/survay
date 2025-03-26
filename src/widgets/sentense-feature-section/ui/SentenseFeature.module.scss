@@ -1,0 +1,66 @@
+.sentense {
+  @include flex-container(column, flex-start, stretch);
+  gap: 36px;
+  width: 1498px;
+  .sentenseHead {
+    display: flex;
+    justify-content: space-between;
+    .sentenseTitle {
+    
+      font: $fontH2;
+    }
+    .dopInfo {
+      font: $fontP1;
+      line-height: 32px;
+
+      width: 770px;
+    }
+  }
+  .line {
+    height: 1px;
+    background-color: $bgLinePage;
+  }
+  .cards {
+    margin-top: 3px;
+    margin-bottom: 4px;
+    display: flex;
+    gap: 20px;
+    .card {
+      width: 405px;
+      height: 300px;
+      padding: 40px;
+      border: 1px solid $borderCards;
+      background-color: $bgCardsSentense;
+      border-radius: $RadiusXXL;
+      -webkit-border-radius: $RadiusXXL;
+      -moz-border-radius: $RadiusXXL;
+      -ms-border-radius: $RadiusXXL;
+      -o-border-radius: $RadiusXXL;
+
+      .cardTitle {
+        font: $fontP1;
+      }
+      .icon {
+        padding-top: 27px;
+        margin-left: 119px;
+      }
+      .iconBook {
+        padding-top: 8px;
+        margin-left: 95px;
+      }
+      .iconConsultancy {
+        padding-top: 14px;
+        margin-left: 55px;
+      }
+    }
+  }
+  .cardAudit {
+    background: url('../assets/document_9303518\ 1.svg') no-repeat right bottom;
+  }
+  .cardGuide {
+    background: url('../assets/book.svg') no-repeat right bottom;
+  }
+  .cardConsult {
+    background: url('../assets/consultancy.svg') no-repeat bottom;
+  }
+}

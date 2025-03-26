@@ -1,0 +1,51 @@
+.economy{
+    height: 572px;
+    width: 1680px;
+    text-align: left;
+    color: $textActiveButton;
+    border-radius: $RadiusXXL;
+    -webkit-border-radius: $RadiusXXL;
+    -moz-border-radius: $RadiusXXL;
+    -ms-border-radius: $RadiusXXL;
+    -o-border-radius: $RadiusXXL;
+
+    background: 
+
+    url('../assets/FeatureEconomy.svg')no-repeat,
+    url('../assets/woman.png')no-repeat right bottom;
+  
+    .economyText{
+        display: flex;
+        flex-direction: column;
+        width: 865px;
+        gap:32px;
+        padding:  40px 40px 0 40px;
+    
+    .economyTitle{
+        font:$fontH2 ;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .line{
+        width: 843px;
+        height: 1px;
+        background-color: $bgLinePage;
+    }
+    .dopInfo{
+        display: flex;
+        gap: 20px;
+        .dopIntoSmallText{
+            font: $fontBody;
+            width: 365px;
+        }
+        .dopInfoBigText{
+            font: $fontH3;
+            width: 461px;
+        }
+    }}
+    .btn{
+    margin-top: 44px;
+    padding: 0 40px;
+    }
+}
