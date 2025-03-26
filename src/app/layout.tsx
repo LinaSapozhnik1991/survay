@@ -4,7 +4,7 @@ import '../styles/globals.scss'
 import '../styles/font/font.scss'
 
 export const metadata: Metadata = {
-  title: '',
+  title: 'Easy Script',
   description: ''
 }
 
