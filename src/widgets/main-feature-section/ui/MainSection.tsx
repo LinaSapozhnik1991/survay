@@ -1,9 +1,11 @@
 import React from 'react'
 
+import OpenSurvey from '@/features/open-survey'
+
 import { Logo } from '../../../shared/assets/icons'
-import OpenSurvey from '../../../features/open-survey'
 
 import styles from './MainSection.module.scss'
+
 const MainSection = () => {
   return (
     <section className={styles.main}>

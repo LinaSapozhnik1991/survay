@@ -1,6 +1,6 @@
 import React from 'react'
 
-import OpenSurvey from '../../../features/open-survey'
+import OpenSurvey from '@/features/open-survey'
 
 import styles from './SentenseFeature.module.scss'
 
