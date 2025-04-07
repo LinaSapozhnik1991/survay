@@ -1,8 +1,7 @@
 import React from 'react'
 
 import OpenSurvey from '@/features/open-survey'
-
-import { Logo } from '../../../shared/assets/icons'
+import { Logo } from '@/shared/assets/icons'
 
 import styles from './MainSection.module.scss'
 
@@ -10,7 +9,9 @@ const MainSection = () => {
   return (
     <section className={styles.main}>
       <div className={styles.mainHead}>
-        <Logo />
+        <div className={styles.logo}>
+          <Logo />
+        </div>
         <div className={styles.mainText}>
           <div className={styles.mainText_name}>
             <p className={styles.easyScript}>EasyScript</p>

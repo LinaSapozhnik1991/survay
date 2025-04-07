@@ -3,13 +3,7 @@ import React from 'react'
 
 import EasyScript from '@/pages/easyScript/page'
 
-import ModalRootLayout from './ModalRootLayout'
-
 const Home: React.FC = () => {
-  return (
-    <ModalRootLayout>
-      <EasyScript />
-    </ModalRootLayout>
-  )
+  return <EasyScript />
 }
 export default Home
