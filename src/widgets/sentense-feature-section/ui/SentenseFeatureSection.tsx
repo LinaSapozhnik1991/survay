@@ -34,9 +34,11 @@ const SentenseFeatureSection = () => {
           </h5>
         </div>
       </div>
-      <OpenSurvey primary size="smallXL">
-        Отправить заявку
-      </OpenSurvey>
+      <div className={styles.btn}>
+        <OpenSurvey primary size="smallXL">
+          Отправить заявку
+        </OpenSurvey>
+      </div>
     </div>
   )
 }

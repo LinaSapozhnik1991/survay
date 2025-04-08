@@ -95,10 +95,17 @@
       height: 56px;
       font:$fontBody;
     }
+    &.mediumXL{
+      width: 253px;
+      height: 56px;
+      font:$fontBody;
+      font-weight: 500;
+    }
     &.smallXL{
       width: 198px;
       height: 56px;
       font: $fontBody;
+      font-weight: 500;
     }
   }
 }

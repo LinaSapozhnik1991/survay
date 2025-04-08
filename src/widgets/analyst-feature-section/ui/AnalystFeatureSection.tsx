@@ -30,7 +30,7 @@ const AnalystFeatureSection = () => {
 
         <div className={styles.btn}>
           <OpenSurvey primary size="mediumXL">
-            Попробовать бесплатно{' '}
+            Попробовать бесплатно
           </OpenSurvey>
         </div>
       </div>
