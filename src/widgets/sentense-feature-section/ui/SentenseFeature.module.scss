@@ -65,7 +65,7 @@
 }
 
 
-@media(min-width:1024px) and (max-width:1650px){
+@media(max-width:1024px){
   .sentense{
     width: auto;
     gap:24px;
@@ -99,7 +99,7 @@
     }
   }
 }
-@media(min-width:375px) and (max-width:1023px){
+@media(max-width:375px) {
   .sentense{
     width: 295px;
     gap: 28px;
