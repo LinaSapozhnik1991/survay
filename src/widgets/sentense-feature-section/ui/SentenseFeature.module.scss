@@ -99,7 +99,7 @@
     }
   }
 }
-@media(max-width:355px) {
+@media(min-width:355px) and (max-width:375px) {
   .sentense{
     gap: 28px;
     margin: 0 auto;
