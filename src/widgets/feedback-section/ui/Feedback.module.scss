@@ -411,10 +411,10 @@
     }
   }
 }
-@media (min-width:365px) and (max-width: 376px) {
+@media (min-width:355px) and (max-width: 376px) {
   .sliderContainer {
     height: 1191px;
-    padding: 40px;
+    padding: 30px;
 
     .feedbackTitle {
       font: $fontBody;
@@ -424,12 +424,13 @@
 
     .review {
       margin-top: 24px;
+      width: 100%;
 
       .feedback {
         margin-top: 32px;
 
         .videoContainers {
-          width: 295px;
+          width: 100%;
           height: 179px;
           margin-top: 32px;
           border-radius: 32px;
@@ -454,7 +455,7 @@
           }
         }
         .feedbackUser {
-          width: 295px;
+          width: 100%;
           gap: 8px;
           .director {
             font: $fontBody;
@@ -493,7 +494,7 @@
         justify-content: center;
         gap: 12px;
         height: 276px;
-        width: 295px;
+        width: 100%;
         margin-top: 16px;
         .result {
           width: 100%;
