@@ -411,7 +411,7 @@
     }
   }
 }
-@media (max-width: 375px) {
+@media (min-width:365px) and (max-width: 375px) {
   .sliderContainer {
     height: 1191px;
     padding: 40px;
@@ -493,9 +493,10 @@
         justify-content: center;
         gap: 12px;
         height: 276px;
+        width: 292px;
         margin-top: 16px;
         .result {
-          width: 295px;
+          width: 100%;
           height: 60px;
           font: $fontSmall;
         }
