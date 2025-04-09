@@ -1,7 +1,8 @@
 .sentense {
   @include flex-container(column, flex-start, stretch);
   gap: 36px;
-  width: 1498px;
+  width: 100%;
+  padding: 160px 302px 0 120px;
   .sentenseHead {
     display: flex;
     justify-content: space-between;
@@ -69,6 +70,7 @@
   .sentense{
     width: auto;
     gap:24px;
+    padding: 60px 70px;
     .sentenseHead{
       flex-direction: column;
       gap:28px;
@@ -99,10 +101,11 @@
     }
   }
 }
-@media(max-width:356px)  {
+@media(max-width:375px)  {
   .sentense{
     gap: 28px;
     margin: 0 auto;
+    padding: 40px;
     .sentenseHead{
       flex-direction: column;
       .sentenseTitle{
